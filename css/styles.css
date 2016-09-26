@@ -1,9 +1,113 @@
+/* -------------------------------------------------- */
+/* BASE STYLES */
+/* -------------------------------------------------- */
 * {
   box-model: border-box;
+  color: #333;
+  font-family: sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+main {
+	width: 96%;
+	max-width: 960px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	padding: 50px 0px;
+}
+
+main::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.post-preview {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 2%;
+	float: left;
+}
+
+.post-preview__header {
+	width: 100%;
+	height: auto;
+	padding-top: 66.666666%;
+	background: url(https://placeholdit.imgix.net/~text?txtsize=60&txt=3:2&w=600&h=400) no-repeat center;
+	background-size: cover;
+}
+
+.post-preview__body {
+	padding: 15px 15px 30px;
+}
+
+.post-categories {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.post-categories li {
+	display: inline-block;
+	background-color: #EFEFEF;
+	margin: 0 5px 5px 0;
+	padding: 8px;
+
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.post-title {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.post-excerpt {
+	margin: 0;
+
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+
+/* -------------------------------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------------------------------- */
+@media all and (min-width: 600px) {
+	.post-preview {
+		width: 49%;
+	}
+
+	.post-preview:nth-child(2n) {
+		margin-left: 2%;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.post-preview {
+		width: 32%;
+	}
+
+	.post-preview:nth-child(2n) {
+		margin-left: 0;
+	}
+
+	.post-preview:nth-child(3n-1) {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
 }

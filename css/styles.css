@@ -1,0 +1,9 @@
+* {
+  box-model: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

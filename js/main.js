@@ -1,3 +1,7 @@
 $( document ).ready( function() {
-	// DO NO THINGS;
+
+	var btn = document.getElementById( 'tofs' );
+
+	btn.addEventListener( 'click', tofs.init );
+
 } );

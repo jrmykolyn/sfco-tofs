@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- PROJECT STYLES -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- VENDOR STYLES -->
+    <link rel="stylesheet" href="css/vendor/sfco-tofs.0.0.0.css">
     <!-- VENDOR SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/sfco-tofs.0.0.0.js"></script>
     <!-- PROJECT SCRIPTS -->
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -17,7 +20,7 @@
     </header>
     <main class="main-content">
       <!-- PLACEHOLDER CONTENT - START -->
-      <article class="post-preview">
+      <article class="post-preview" data-tofs-category="projects" data-tofs-title="Post Title" data-tofs-link="http://www.google.ca/">
         <header class="post-preview__header"></header>
         <div class="post-preview__body">
           <ul class="post-categories">
@@ -31,7 +34,7 @@
           </p>
         </div>
       </article><!-- .post-preview -->
-      <article class="post-preview">
+      <article class="post-preview" data-tofs-category="projects" data-tofs-title="Post Title" data-tofs-link="http://www.google.ca/">
         <header class="post-preview__header"></header>
         <div class="post-preview__body">
           <ul class="post-categories">
@@ -45,7 +48,7 @@
           </p>
         </div>
       </article><!-- .post-preview -->
-      <article class="post-preview">
+      <article class="post-preview" data-tofs-category="projects" data-tofs-title="Post Title" data-tofs-link="http://www.google.ca/">
         <header class="post-preview__header"></header>
         <div class="post-preview__body">
           <ul class="post-categories">
@@ -61,6 +64,8 @@
       </article><!-- .post-preview -->
       <!-- PLACEHOLDER CONTENT - END -->
     </main>
-    <footer class="footer-wrap"></footer>
+    <footer class="footer-wrap">
+      <button id="tofs">File System View</button>
+    </footer>
   </body>
 </html>

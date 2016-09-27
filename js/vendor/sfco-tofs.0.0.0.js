@@ -166,9 +166,9 @@ try {
 			var link_title = document.createElement( 'a' );
 
 			td_title.setAttribute( 'class', 'tofs-title');
-			link_title.setAttribute( 'href', '#' );
+			link_title.setAttribute( 'href', data.link );
 
-			link_title.appendChild( document.createTextNode( data.link ) );
+			link_title.appendChild( document.createTextNode( data.title ) );
 			td_title.appendChild( link_title );
 
 			// Create 'date':

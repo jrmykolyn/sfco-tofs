@@ -103,7 +103,11 @@ try {
 			// Complete markup assembly; blow away existing document HTML; insert markup into doc.
 			table.appendChild( tbody );
 			document.body.innerHTML = '';
-			document.body.appendChild( table );			
+			document.body.appendChild( table );
+
+			// Trigger 'complete' event.
+			var TOFS_COMPLETE = new Event( 'TOFS_COMPLETE' );
+			window.dispatchEvent( TOFS_COMPLETE );
 		}
 
 

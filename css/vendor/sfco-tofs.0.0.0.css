@@ -2,7 +2,7 @@
 /* ToFS STYLES */
 /* -------------------------------------------------- */
 .tofs-table {
-	padding: 20px;
+	padding: 8px;
 }
 
 .tofs-table,
@@ -35,6 +35,8 @@
 	margin: 0px 0px 10px;
 	padding-bottom: 10px;
 	border-bottom: solid 1px #000;
+
+	font-size: 32px;
 }
 
 .tofs-table--inner,
@@ -44,6 +46,10 @@
 	font-family: serif;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.tofs-table--inner {
+	margin-bottom: 20px;
 }
 
 .tofs-table--inner a {
@@ -62,4 +68,5 @@
 
 .tofs-table--inner__row td:first-child {
 	padding-left: 0;
+	padding-right: 0;
 }

@@ -66,8 +66,9 @@ try {
 					cat_tr.classList = 'tofs-table__row';
 					cat_h2.classList = 'tofs-category-title';
 
-					// Assemble 'category row':
-					cat_h2.appendChild( document.createTextNode( toTitleCase( fs[key].name ) ) );
+					// Assemble 'category row'.
+					// Add trailing '/' to category string... 'cuz... the matrix.
+					cat_h2.appendChild( document.createTextNode( toTitleCase( fs[key].name ) + '/' ) );
 					cat_td.appendChild( cat_h2 );
 					cat_tr.appendChild( cat_td );
 

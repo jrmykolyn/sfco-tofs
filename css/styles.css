@@ -2,7 +2,7 @@
 /* BASE STYLES */
 /* -------------------------------------------------- */
 * {
-  box-model: border-box;
+  box-sizing: border-box;
   color: #333;
   font-family: sans-serif;
 }
@@ -49,6 +49,85 @@ button {
 
 button:hover {
 	background-color: #111;
+}
+
+.clearfix:after,
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.nav-wrap {
+	width: 100%;
+	height: 60px;
+	display: block;
+	background-color: #FFF;
+	border-bottom: solid 1px #BBB;
+	-webkit-box-shadow: 0px 1px 1px #DDD;
+	box-shadow: 0px 1px 1px #DDD;
+	padding: 0 1rem;
+}
+
+.nav-logo-wrap,
+.nav-links-wrap {
+	height: 100%;
+	display: block;
+}
+
+.nav-logo-wrap {
+	width: 60px;
+	background-color: #DDD;
+	float: left;
+}
+
+.nav-links-wrap {
+	width: auto;
+	float: right;
+}
+
+.nav-links {
+	list-style: none;
+	margin: 0;
+	padding: 10px 0px;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 5px 8px;
+	line-height: 30px;
+
+}
+
+.nav-links a {
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.nav-links a::after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background-color: #333;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	-webkit-transition: width 0.125s;
+	-moz-transition: width 0.125s;
+	-o-transition: width 0.125s;
+	transition: width 0.125s;
+}
+
+.nav-links a:hover::after {
+	width: 100%;
+}
+
+.nav-links li:not(:last-child) {
+	margin-right: 8px;
 }
 
 .post-preview {
